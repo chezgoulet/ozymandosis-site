@@ -49,3 +49,29 @@ nav.site .mark .beta-badge { font-size: .62rem; padding: 4px 7px 3px; }
 .hero { padding-top: 96px; }
 .doc { padding-top: 110px; }
 @media (max-width: 560px) { nav.site .mark canvas { width: 150px; } }
+
+/* --- the game in detail (2026-09-29): the cultures' own epithets and balance rules,
+   a loop paragraph, and three figures taken from the game's own captures --- */
+.culture .epithet { font-style: italic; color: var(--ink-dim); margin: 0 0 6px; font-size: .95rem; }
+.culture .rule { font-family: var(--mono); font-size: .78rem; color: var(--ink-soft); margin: 12px 0 0;
+  padding-top: 10px; border-top: 1px solid var(--line); }
+.loop { max-width: 720px; margin: 0 auto 24px; color: var(--ink-soft); line-height: 1.65; }
+.figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 16px; }
+.figure { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; margin: 0; }
+.figure img { width: 100%; height: auto; aspect-ratio: 820 / 560; object-fit: cover; display: block; background: #031015; }
+/* height:auto matters: the HTML height attribute on these images otherwise wins over
+   aspect-ratio, which portrait-crops a wide UI capture and cuts off the content */
+.figure figcaption { padding: 14px 16px 18px; color: var(--ink-soft); line-height: 1.5; font-size: .95rem; }
+.figure figcaption b { color: var(--ink); font-weight: 600; }
+.playwith { max-width: 720px; margin: 20px auto 0; padding: 16px 18px; border: 1px solid var(--line-2);
+  border-radius: 14px; background: rgba(10, 30, 38, .5); color: var(--ink-soft); line-height: 1.6; }
+.playwith b { color: var(--ink); }
+footer.site a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px; }
+@media (max-width: 560px) {
+  /* One card per swipe. Six stacked cards measured 4,605px — 71% of the phone page. */
+  .cultures { display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; gap: 12px; scrollbar-width: none; padding-bottom: 4px; }
+  .cultures::-webkit-scrollbar { display: none; }
+  .culture { flex: 0 0 84%; scroll-snap-align: center; }
+  .culture p { font-size: .95rem; }
+}
