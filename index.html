@@ -13,14 +13,14 @@
 <meta property="og:url" content="https://ozymandosis.com/">
 <meta property="og:title" content="Ozymandosis — a real-time strategy game of living light">
 <meta property="og:description" content="A real-time strategy game of living light: grow a bioluminescent culture, evolve its creatures organ by organ. Coming to Steam, iOS and Android.">
-<meta property="og:image" content="https://ozymandosis.com/img/title.jpg">
-<meta property="og:image:width" content="1440">
-<meta property="og:image:height" content="900">
-<meta property="og:image:alt" content="The Ozymandosis wordmark glowing in living light.">
+<meta property="og:image" content="https://ozymandosis.com/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Ozymandosis title screen: a glowing wordmark over a dark bloom of creatures.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ozymandosis — a real-time strategy game of living light">
 <meta name="twitter:description" content="A real-time strategy game of living light: grow a bioluminescent culture, evolve its creatures organ by organ. Coming to Steam, iOS and Android.">
-<meta name="twitter:image" content="https://ozymandosis.com/img/title.jpg">
+<meta name="twitter:image" content="https://ozymandosis.com/img/og.jpg">
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
 <link rel="preload" href="/fonts/AtkinsonNext-normal.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">
@@ -87,24 +87,31 @@
   <h2>Six cultures, six ways to live</h2>
   <p class="intro">Each culture builds differently. Their nests, spires and buds are organisms too: they breathe, beat and grow the same organs as your creatures, and they show their wounds.</p>
   <div class="cultures">
-    <article class="culture"><img src="/img/verdant.jpg" alt="A Verdant nucleus sending roots toward glowing pools" loading="lazy" decoding="async" width="820" height="560"><div class="tx"><h3>The Verdant</h3><p class="role">Economy</p><p>Patient gardeners whose nests put down roots toward the nearest pools and drink.</p></div></article>
-    <article class="culture"><img src="/img/luminant.jpg" alt="A Luminant nucleus with a golden nautilus shell and eyes on stalks" loading="lazy" decoding="async" width="820" height="560"><div class="tx"><h3>The Luminants</h3><p class="role">Evolution</p><p>Keepers of the gold spore. Their halls wear nautilus shells and watch you with stalked eyes.</p></div></article>
-    <article class="culture"><img src="/img/current.jpg" alt="A Slither nucleus trailing a vortex of flagella" loading="lazy" decoding="async" width="820" height="560"><div class="tx"><h3>The Slither</h3><p class="role">Speed and raids</p><p>Riders of the long water. Even their buildings seem to swim, trailing flagella in a vortex.</p></div></article>
-    <article class="culture"><img src="/img/choir.jpg" alt="A Choir bell with long antennae and chasing lights" loading="lazy" decoding="async" width="820" height="560"><div class="tx"><h3>The Choir</h3><p class="role">Sensing and ambush</p><p>Listeners in the dark. Their bells sing rings into the water and hear everything.</p></div></article>
-    <article class="culture"><img src="/img/umbral.jpg" alt="A Seethe nucleus with a toothed maw, clustered eyes and hooked tethers" loading="lazy" decoding="async" width="820" height="560"><div class="tx"><h3>The Seethe</h3><p class="role">Parasitism</p><p>The tethered hunger. A toothed maw, a cluster of eyes, and hooks that reach for whatever comes near.</p></div></article>
-    <article class="culture"><img src="/img/bloom.jpg" alt="A Bloom nucleus armoured in plates and spikes, with egg sacs" loading="lazy" decoding="async" width="820" height="560"><div class="tx"><h3>The Bloom</h3><p class="role">Aggression</p><p>Brief and burning. Carapace, spikes and egg sacs that swell and burst into swarms.</p></div></article>
+    <article class="culture"><img src="/img/verdant.jpg" alt="A Verdant nucleus sending roots toward glowing pools" loading="lazy" decoding="async" width="820" height="560"><div class="tx"><h3>The Verdant</h3><p class="epithet">Gardeners of the Drift</p><p class="role">Economy</p><p>Patient gardeners whose nests put down roots toward the nearest pools and drink.</p><p class="rule">Harvest ×1.5 · Bite ×0.8</p></div></article>
+    <article class="culture"><img src="/img/luminant.jpg" alt="A Luminant nucleus with a golden nautilus shell and eyes on stalks" loading="lazy" decoding="async" width="820" height="560"><div class="tx"><h3>The Luminants</h3><p class="epithet">Keepers of the Gold Spore</p><p class="role">Evolution</p><p>Keepers of the gold spore. Their halls wear nautilus shells and watch you with stalked eyes.</p><p class="rule">Research ×0.6 cost and time · +50% spore</p></div></article>
+    <article class="culture"><img src="/img/current.jpg" alt="A Slither nucleus trailing a vortex of flagella" loading="lazy" decoding="async" width="820" height="560"><div class="tx"><h3>The Slither</h3><p class="epithet">Riders of the Long Water</p><p class="role">Speed and raids</p><p>Riders of the long water. Even their buildings seem to swim, trailing flagella in a vortex.</p><p class="rule">Speed ×1.35 · HP ×0.85</p></div></article>
+    <article class="culture"><img src="/img/choir.jpg" alt="A Choir bell with long antennae and chasing lights" loading="lazy" decoding="async" width="820" height="560"><div class="tx"><h3>The Choir</h3><p class="epithet">Listeners in the Dark</p><p class="role">Sensing and ambush</p><p>Listeners in the dark. Their bells sing rings into the water and hear everything.</p><p class="rule">Sense ×1.5 · unseen beyond 55 · ambush bites for 2×</p></div></article>
+    <article class="culture"><img src="/img/umbral.jpg" alt="A Seethe nucleus with a toothed maw, clustered eyes and hooked tethers" loading="lazy" decoding="async" width="820" height="560"><div class="tx"><h3>The Seethe</h3><p class="epithet">The Tethered Hunger</p><p class="role">Parasitism</p><p>The tethered hunger. A toothed maw, a cluster of eyes, and hooks that reach for whatever comes near.</p><p class="rule">30% of kills rise again as Seethe</p></div></article>
+    <article class="culture"><img src="/img/bloom.jpg" alt="A Bloom nucleus armoured in plates and spikes, with egg sacs" loading="lazy" decoding="async" width="820" height="560"><div class="tx"><h3>The Bloom</h3><p class="epithet">The Brief and Burning</p><p class="role">Aggression</p><p>Brief and burning. Carapace, spikes and egg sacs that swell and burst into swarms.</p><p class="rule">Cost ×0.6 · hatch ×0.6 · bite ×1.25 · lives 90 seconds</p></div></article>
   </div>
 </section>
 
 <section class="band" id="world">
   <h2>Built to be lived in</h2>
+    <p class="loop">Harvest the light that drifts through the water, grow it into organs, and decide what your creatures become: legs to hold ground, flagella to raid, mandibles to bite, pili to drink deeper. Every match is a body plan you invent and then have to defend — and when it goes wrong, the colony’s colour tells you before the numbers do.</p>
   <div class="pillars">
     <div class="pillar"><h3>Design your creatures</h3><p>Thirty organs across legs, flagella, pili, mandibles and antennae. Combine them in the Spawnforge; every organ changes how a creature looks and fights.</p></div>
     <div class="pillar"><h3>A score that listens</h3><p>The soundtrack is composed as you play: each culture has its own theme and mode, and the music swells from drifting ambience to pounding pulse as the fighting grows.</p></div>
     <div class="pillar"><h3>Readable by design</h3><p>Hyperlegible type for dyslexic players, shape markers so colour is never the only signal, scalable interface, and controls for touch, mouse and keyboard.</p></div>
     <div class="pillar"><h3>Alive, not animated</h3><p>Procedural creatures that grow the parts you evolve, a colony whose condition shows in its colour, and a world that burns, floods and grows back.</p></div>
   </div>
-</section>
+    <div class="figures">
+      <figure class="figure"><img src="/img/world.jpg" alt="A colony in play: several glowing creatures with luminous trails around a bright nucleus" loading="lazy" decoding="async" width="820" height="560"><figcaption><b>Every structure is an organism too.</b> Nests, spires and buds breathe, beat and grow the same organs as your creatures.</figcaption></figure>
+      <figure class="figure"><img src="/img/forge.jpg" alt="The Spawnforge: a creature diagram beside a list of organ slots and a library of saved designs" loading="lazy" decoding="async" width="820" height="560"><figcaption><b>Five organ classes, four tiers each.</b> Legs for durability, flagella for mobility, pili for harvest, mandibles for offence, antennae for perception.</figcaption></figure>
+      <figure class="figure"><img src="/img/codex.jpg" alt="The organ codex: a grid of organ cards, each with a creature, its stats and its cost" loading="lazy" decoding="async" width="820" height="560"><figcaption><b>The whole codex, in-game.</b> Every organ, power, ability and powerup, with what it does, what it costs and what it needs.</figcaption></figure>
+    </div>
+    <p class="playwith"><b>Play with up to five others.</b> A match on your own Wi-Fi is free and serverless — no account, no internet. Online, every match is relayed, so nothing exposes your address.</p>
+  </section>
 
 <footer class="site">
   <p><a href="/privacy">Privacy</a><a href="/terms">Terms</a></p>
