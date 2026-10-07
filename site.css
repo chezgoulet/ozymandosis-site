@@ -75,3 +75,7 @@ footer.site a { display: inline-flex; align-items: center; min-height: 44px; pad
   .culture { flex: 0 0 84%; scroll-snap-align: center; }
   .culture p { font-size: .95rem; }
 }
+
+/* the store badge under the hero copy */
+.hero .badge-row { margin: 26px 0 0; }
+.badge-row img { display: inline-block; }
